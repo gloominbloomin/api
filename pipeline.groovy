@@ -20,7 +20,6 @@ pipeline {
             steps {
                 echo "Building  ${env.timestamp}..."
                 sh('docker build -t $timestamp .')
-                echo '$timestamp'
             }
         }
         stage('Test') {
