@@ -6,7 +6,7 @@ COPY package*.json ./
 
 # Shell form / starts shell session
 RUN npm install
-RUN npm run build
+RUN npm build
 # RUN npm run watch
 
 COPY . .
